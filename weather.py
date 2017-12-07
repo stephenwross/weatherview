@@ -27,6 +27,7 @@ def getForecast(loc,  key):
         parsed_json['forecast']['simpleforecast']['forecastday'][x]['conditions']
         )
     f.close()
+    print("All done!")
 
 if __name__ == "__main__":
     main()
