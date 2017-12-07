@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Project SYSTEM "Project-5.1.dtd">
 <!-- eric project file for project weatherview -->
-<!-- Saved: 2017-12-06, 22:25:16 -->
+<!-- Saved: 2017-12-06, 22:28:38 -->
 <!-- Copyright (C) 2017 sross,  -->
 <Project version="5.1">
   <Language></Language>
@@ -15,6 +15,7 @@
   <Eol index="0"/>
   <Sources>
     <Source>__init__.py</Source>
+    <Source>jumby.py</Source>
     <Source>weather.py</Source>
   </Sources>
   <Forms/>
