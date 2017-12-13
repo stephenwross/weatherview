@@ -1,0 +1,30 @@
+{% block body %}
+<head>
+   <script src="static/js/jquery-3.2.1.min.js"></script>
+   <script type=text/javascript>
+     $(function() {
+       $('a#process_input').bind('click', function() {
+          $.getJSON('/show_forecast', {
+            inputLoc: $('input[name="inputLoc"]').val(),
+              }, function(data) {
+                 $("#result").text(data.result);
+                 });
+             return false;
+           });
+      });
+   </script
+
+</head> 
+<body class="body">
+   <div>
+	<h1>Weatherview</h1>
+	<form>
+	<input type=text size=10 name=inputLoc>
+	<a href='#' id=process_input><button class='btn btn-default'>Get Forecast</button></a>
+	</form>
+	<textarea rows="12" cols="50" id=result>Forecast goes here</textarea>
+   </div>
+</body>
+ 
+</html>
+{% endblock %}
